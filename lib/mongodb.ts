@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'development') {
     // @ts-ignore
     global._mongoClientPromise = client.connect()
   }
-    // @ts-ignore
+  // @ts-ignore
   clientPromise = global._mongoClientPromise
 } else {
   // In production mode, it's best to not use a global variable.
